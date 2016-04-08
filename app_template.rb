@@ -23,11 +23,12 @@ gem_group :development do
   gem 'pry-rails'
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem "erb2haml"
+  gem 'erb2haml'
   gem 'quiet_assets'
   gem 'colorize_unpermitted_parameters'
   gem 'rails-flog', require: 'flog'
   gem 'bullet'
+  gem 'letter_opener'
 end
 
 # Development and Test
