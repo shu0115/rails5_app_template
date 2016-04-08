@@ -26,7 +26,6 @@ gem_group :development do
   gem "erb2haml"
   gem 'quiet_assets'
   gem 'colorize_unpermitted_parameters'
-  # gem 'rails-flog-disable-sql-format', require: 'flog'
   gem 'rails-flog', require: 'flog'
   gem 'bullet'
 end
@@ -70,8 +69,7 @@ create_file 'Procfile', content.force_encoding('ASCII-8BIT')
 insert_into_file "config/application.rb", "    config.i18n.default_locale     = :ja\n    I18n.enforce_available_locales = false\n", after: "# -- all .rb files in that directory are automatically loaded.\n"
 content = "    config.time_zone = 'Tokyo'\n"
 insert_into_file "config/application.rb", content.force_encoding('ASCII-8BIT'), after: "# -- all .rb files in that directory are automatically loaded.\n"
-# content =  "    # For Tapp\n"
-# content += "    Tapp.config.default_printer = :awesome_print\n"
+
 # content += "    # For Opal - These are the available options with their default value:\n"
 # content += "    config.opal.method_missing      = true\n"
 # content += "    config.opal.optimized_operators = true\n"
