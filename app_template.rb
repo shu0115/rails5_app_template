@@ -11,7 +11,8 @@ gem 'config'
 gem 'tapp-awesome_print'
 gem 'i18n_generators'
 gem 'exception_notification'
-gem 'haml-rails'
+# gem 'haml-rails'
+gem 'faml'
 gem 'opal-rails'
 
 # Markdown & Syntax Highlight
