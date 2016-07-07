@@ -98,7 +98,7 @@ create_file 'tmp/no-flog-sql.txt'
 # ---------- Gemfile ---------- #
 # Ruby Version Insert
 insert_into_file "Gemfile",
-  "ruby '2.3.1'\n",
+  "ruby '2.3.0'\n",
   after: "source 'https://rubygems.org'\n"
 
 # Gem Install
