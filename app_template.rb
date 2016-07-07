@@ -24,8 +24,6 @@ gem_group :development do
   gem 'pry-rails'
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'erb2haml'
-  gem 'quiet_assets'
   gem 'colorize_unpermitted_parameters'
   gem 'rails-flog', require: 'flog'
   gem 'bullet'
@@ -98,7 +96,7 @@ create_file 'tmp/no-flog-sql.txt'
 # ---------- Gemfile ---------- #
 # Ruby Version Insert
 insert_into_file "Gemfile",
-  "ruby '2.3.0'\n",
+  "ruby '2.3.1'\n",
   after: "source 'https://rubygems.org'\n"
 
 # Gem Install
