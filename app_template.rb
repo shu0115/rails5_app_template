@@ -14,6 +14,7 @@ gem 'exception_notification'
 # gem 'haml-rails'
 gem 'faml'
 gem 'opal-rails'
+gem 'ridgepole'
 
 # Markdown & Syntax Highlight
 gem 'redcarpet'
