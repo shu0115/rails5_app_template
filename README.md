@@ -1,7 +1,7 @@
-# rails5_app_template
+# Rails5 App Template
 
-### Usage
+## Usage
 
 ```bash
-rails new new_app_name -m https://raw.githubusercontent.com/shu0115/rails5_app_template/master/app_template.rb
+rails new NEW_APP_NAME --template https://raw.githubusercontent.com/shu0115/rails5_app_template/master/app_template.rb
 ```
