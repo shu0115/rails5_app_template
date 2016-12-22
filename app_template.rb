@@ -110,7 +110,7 @@ run 'bundle install --without production'
 # Migration
 create_file 'db/Schemafile', File.read(template_path + '/Schemafile')
 create_file 'db/config.yml', File.read(template_path + '/config.yml')
-run 'bundle exec ridgepole --config db/config.yml --file db/Schemafile --apply --dry-run'
+run 'bundle exec ridgepole --config db/config.yml --file db/Schemafile --apply'
 
 # ---------- RSpec ---------- #
 # Generate Command
