@@ -47,8 +47,6 @@ gem_group :production do
   # gem 'heroku-deflater'
 end
 
-insert_into_file "Gemfile", "\n", after: "gem 'coderay'\n"
-
 # ---------- Assets ---------- #
 # Replace application.js
 # remove_file "app/assets/javascripts/application.js"
@@ -106,6 +104,8 @@ create_file 'tmp/no-flog-sql.txt'
 
 # Gem Install
 run 'bundle install --without production'
+
+insert_into_file "Gemfile", " \n", after: "gem 'coderay'\n"
 
 # Migration
 create_file 'db/Schemafile', open(template_path + '/db/Schemafile').read
