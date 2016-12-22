@@ -1,3 +1,5 @@
+template_path = "#{File.dirname(__FILE__)}/templates"
+
 # ---------- Install Gem ---------- #
 # Comment Out
 comment_lines 'Gemfile', "gem 'sqlite3'"
@@ -103,7 +105,12 @@ create_file 'tmp/no-flog-sql.txt'
 #   after: "source 'https://rubygems.org'\n"
 
 # Gem Install
-run "bundle install --without production"
+run 'bundle install --without production'
+
+# Migration
+create_file 'db/Schemafile', File.read(template_path + '/Schemafile')
+create_file 'db/config.yml', File.read(template_path + '/config.yml')
+run 'bundle exec ridgepole --config db/config.yml --file db/Schemafile --apply --dry-run'
 
 # ---------- RSpec ---------- #
 # Generate Command
