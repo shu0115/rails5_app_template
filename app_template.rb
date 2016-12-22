@@ -95,10 +95,10 @@ insert_into_file "config/environments/development.rb",
 create_file 'tmp/no-flog-sql.txt'
 
 # ---------- Gemfile ---------- #
-# Ruby Version Insert
-insert_into_file "Gemfile",
-  "ruby '2.3.3'\n",
-  after: "source 'https://rubygems.org'\n"
+# # Ruby Version Insert
+# insert_into_file "Gemfile",
+#   "ruby '2.3.3'\n",
+#   after: "source 'https://rubygems.org'\n"
 
 # Gem Install
 run "bundle install --without production"
