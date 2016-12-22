@@ -14,7 +14,7 @@ gem 'exception_notification'
 # gem 'haml-rails'
 gem 'faml'
 gem 'opal-rails'
-gem 'ridgepole'
+gem 'ridgepole', '0.6.5.beta14'
 
 # Markdown & Syntax Highlight
 gem 'redcarpet'
@@ -44,6 +44,8 @@ gem_group :production do
   gem 'newrelic_rpm'
   # gem 'heroku-deflater'
 end
+
+insert_into_file "Gemfile", "\n", after: "gem 'coderay'\n"
 
 # ---------- Assets ---------- #
 # Replace application.js
