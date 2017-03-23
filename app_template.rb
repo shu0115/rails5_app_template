@@ -13,8 +13,8 @@ gem 'config'
 gem 'tapp-awesome_print'
 gem 'i18n_generators'
 gem 'exception_notification'
-# gem 'haml-rails'
 gem 'faml'
+gem 'haml-rails'  # For scaffold generate haml template
 gem 'opal-rails'
 gem 'ridgepole', '0.6.5'
 
