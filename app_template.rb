@@ -83,9 +83,9 @@ insert_into_file "config/application.rb", content.force_encoding('ASCII-8BIT'), 
 # production.rb setting
 insert_into_file "config/environments/production.rb", "  config.force_ssl = true\n", after: "# config.force_ssl = true\n"  # 強制SSL設定
 
-# development.rb setting
-gsub_file "config/environments/development.rb", /(config.assets.debug = true)+/, "# config.assets.debug = true"                  # コメントアウト追加
-insert_into_file "config/environments/development.rb", "  config.assets.debug = false\n", after: "config.assets.debug = true\n"  # false設定追加
+# # development.rb setting
+# gsub_file "config/environments/development.rb", /(config.assets.debug = true)+/, "# config.assets.debug = true"                  # コメントアウト追加
+# insert_into_file "config/environments/development.rb", "  config.assets.debug = false\n", after: "config.assets.debug = true\n"  # false設定追加
 
 # Add Strong Parameters config
 insert_into_file "config/environments/development.rb",
