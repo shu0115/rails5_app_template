@@ -92,8 +92,8 @@ insert_into_file "config/environments/development.rb",
   "\n  # Strong Parametersエラー例外発生\n  config.action_controller.action_on_unpermitted_parameters = :raise\n",
   after: "# config.action_view.raise_on_missing_translations = true\n"
 
-# rails-flog setting
-create_file 'tmp/no-flog-sql.txt'
+# # rails-flog setting
+# create_file 'tmp/no-flog-sql.txt'
 
 # ---------- Gemfile ---------- #
 # # Ruby Version Insert
