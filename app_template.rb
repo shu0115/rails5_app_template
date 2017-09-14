@@ -15,8 +15,7 @@ gem 'i18n_generators'
 gem 'exception_notification'
 gem 'faml'
 gem 'haml-rails'  # For scaffold generate haml template
-gem 'opal-rails'
-gem 'ridgepole', '0.6.5'
+gem 'ridgepole'
 
 # Markdown & Syntax Highlight
 gem 'redcarpet'
