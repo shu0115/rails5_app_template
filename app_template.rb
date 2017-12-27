@@ -68,7 +68,7 @@ create_file 'Procfile', content.force_encoding('ASCII-8BIT')
 # create_file 'config/initializers/database_connection.rb', content.force_encoding('ASCII-8BIT')
 
 # application.rb setting
-insert_into_file "config/application.rb", "    config.i18n.default_locale     = :ja\n    I18n.enforce_available_locales = false\n", after: "# -- all .rb files in that directory are automatically loaded.\n"
+#insert_into_file "config/application.rb", "    config.i18n.default_locale     = :ja\n    I18n.enforce_available_locales = false\n", after: "# -- all .rb files in that directory are automatically loaded.\n"
 content = "    config.time_zone = 'Tokyo'\n"
 insert_into_file "config/application.rb", content.force_encoding('ASCII-8BIT'), after: "# -- all .rb files in that directory are automatically loaded.\n"
 
