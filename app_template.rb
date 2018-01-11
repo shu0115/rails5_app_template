@@ -30,6 +30,7 @@ gem_group :development do
 #   gem 'rails-flog', require: 'flog'
   gem 'bullet'
   gem 'letter_opener'
+  gem 'letter_opener_web'
 end
 
 # Development and Test
