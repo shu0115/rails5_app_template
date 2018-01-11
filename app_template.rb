@@ -104,7 +104,7 @@ insert_into_file "config/environments/development.rb",
 # Gem Install
 run 'bundle install --without production'
 
-insert_into_file "Gemfile", "\n", after: "gem 'coderay'\n"
+insert_into_file "Gemfile", " \n", after: "gem 'coderay'\n"
 
 # Migration
 create_file 'db/Schemafile', open(template_path + '/db/Schemafile').read
