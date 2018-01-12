@@ -101,9 +101,11 @@ insert_into_file "config/environments/development.rb",
 # ## rails-flog
 # create_file 'tmp/no-flog-sql.txt'
 
+## session_store.rb
+create_file 'config/initializers/session_store.rb', open(template_path + '/initializers/session_store.rb').read
+
 ## routes.rb
 insert_into_file "config/routes.rb", "\n  mount LetterOpenerWeb::Engine, at: '/letter_opener' if Rails.env.development?\n", after: "  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html\n"
-
 
 # ---------- Gemfile ---------- #
 # # Ruby Version Insert
